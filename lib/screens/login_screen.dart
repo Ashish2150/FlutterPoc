@@ -23,22 +23,19 @@ class _LoginScreenState extends State<LoginScreen> {
   String password;
 
   final _auth = FirebaseAuth.instance;
-/**
- * this method for autologin ....
- *
-  void autoLogin() async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    final String userName = prefs.getString("email");
 
-    if (userName != null) {
-      setState(() {
-        isLogin = true;
-        email = userName;
-        //emailController.text = userName;
-      });
-    }
-  }
-  */
+  // void autoLogin() async {
+  //   final SharedPreferences prefs = await SharedPreferences.getInstance();
+  //   final String userName = prefs.getString("email");
+  //
+  //   if (userName != null) {
+  //     setState(() {
+  //       isLogin = true;
+  //       email = userName;
+  //       //emailController.text = userName;
+  //     });
+  //   }
+  // }
 
   // Future<Null> loginUser() async {
   //   final SharedPreferences prefs = await SharedPreferences.getInstance();
